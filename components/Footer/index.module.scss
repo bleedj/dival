@@ -1,0 +1,45 @@
+.footerContainer {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 3;
+}
+.footer {
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 12%;
+
+
+    &__title {
+        color: gray;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    & label {
+        transition: all 0.1s ease-in-out;
+    }
+    
+    & >img {
+    }
+    
+    // &:hover img {
+    //     filter:  brightness(119);
+    // }
+    &:hover label, a, svg path {
+        color: rgb(255, 255, 255);
+        fill: white;
+        // text-shadow: 2px 3px 8px rgba(255,215,0,0.39);
+    }
+}
+@media (max-width: 620px) {
+    .footer {
+        
+        
+    }
+    
+}

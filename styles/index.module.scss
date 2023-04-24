@@ -1,0 +1,22 @@
+.home {
+    // position: relative;
+    // background: linear-gradient(rgba(255, 255, 255, 0.9), white);
+    // z-index: 2;
+    // background-color: white;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        min-height: 100%;
+        position: fixed;
+        z-index: -2;
+        background-image: url('../public/flowers2.svg');
+        opacity: 0.2;
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: 50% 0;
+        left: 0;
+        top: 0;
+
+    }
+}

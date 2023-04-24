@@ -1,0 +1,39 @@
+.headerContainer {
+    background-color: rgba(0, 0, 0, 0.9);
+    // width: ;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 12%;
+    
+    transition: 0.4s padding ease-out,  0.1s background-color ease-out;
+    margin-bottom: 2rem;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,10);
+
+    & >img {
+    }
+    
+    &:hover img {
+        filter:  brightness(119);
+    }
+    &:hover {
+        padding-bottom: 3.8rem;
+        padding-top: 3.8rem;
+        // background-color: rgba(0, 0, 0, 0.95);
+    }
+    &:hover a, svg path {
+        color: rgb(255, 255, 255);
+        fill: white;
+        // text-shadow: 2px 3px 8px rgba(255,215,0,0.39);
+    }
+}
+@media (max-width: 620px) {
+    .header {
+        
+        
+    }
+    
+}

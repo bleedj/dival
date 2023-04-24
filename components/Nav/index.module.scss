@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    &__link {
+        font-weight: bold;
+        font-size: 3rem;
+        color: gray;
+        text-decoration:dotted;
+        padding:  1rem;
+        
+        transition: color 0.2s ease-out;
+        
+        &_active {
+            color: darkgray;
+        }
+    }
+    
+}
+@media (max-width: 1020px) {
+    .nav {
+        &__link {
+            font-size: 2rem;
+        }
+    }
+    
+}
+@media (max-width: 620px) {
+    .nav {
+        &__link {
+            font-size: 1.5rem;
+        }
+    }
+    
+}

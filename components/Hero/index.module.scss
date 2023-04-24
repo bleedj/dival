@@ -1,0 +1,21 @@
+.hero {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    &::after {
+        content: ' ';
+        display: block;
+        width: max-content;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.6;
+        background-image: url('../../public/flowers2.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        left: 0;
+        top: 0;
+
+    }
+}
